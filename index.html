@@ -7,15 +7,14 @@
     <style>
         body { background-color: #f4f1ee; color: #4a4a4a; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 40px 20px; }
         .container { max-width: 700px; margin: 0 auto; }
-        
         header { text-align: center; margin-bottom: 60px; }
         h1 { font-weight: 300; font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
         .subtitle { font-size: 0.9rem; letter-spacing: 1px; color: #8c8c8c; }
-
         .section { background: #ffffff; padding: 30px; border-radius: 20px; margin-bottom: 30px; line-height: 1.6; border: 1px solid #e8e4e1; }
         h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #f4f1ee; padding-bottom: 10px; margin-bottom: 20px; }
-        
         .business-tag { display: inline-block; background: #eceae7; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; margin: 5px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; border: 1px solid #e8e4e1; }
     </style>
 </head>
 <body>
@@ -27,20 +26,19 @@
 
         <div class="section">
             <h2>The Mission</h2>
-            <p>I graduated high school in 2024—a full year ahead of my class—driven by a hunger for what’s next. At 19, I am a mother to a beautiful 1-year-old and live independently with my supportive partner. <b>Being a young mom doesn't slow my ambition; it fuels it.</b> My dream is to transfer to UCLA or USC to master Software Engineering. I am the most determined person you will meet.</p>
+            <p>I graduated high school in 2024 a full year ahead of my class. At 19, I am a mother to a 1-year-old and live independently, driven by a dream to transfer to <b>UCLA or USC</b> for Computer Science.I am Determined, Responsible, and Resilient.</p>
         </div>
 
         <div class="section">
             <h2>The Studio & Sweets</h2>
-            <p>Outside of the world of logic and math, I run a creative business specializing in:</p>
+            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship fuels my attention to detail in code.</p>
             <span class="business-tag">Mini Cakes</span>
-            <span class="business-tag">Custom Treats</span>
             <span class="business-tag">Handmade Crafts</span>
-            <p>This business taught me management, attention to detail, and the beauty of building things from scratch—skills that translate directly into clean code.</p>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
-    <div style="background: #eceae7; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #8c8c8c; font-size: 0.8rem; letter-spacing: 1px;">IMAGE OF TREATS</div>
-    <div style="background: #eceae7; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #8c8c8c; font-size: 0.8rem; letter-spacing: 1px;">IMAGE OF CRAFTS</div>
-</div>
+            
+            <div class="grid">
+                <img src="Treats.jpg" alt="Mini Cakes">
+                <img src="crafts.jpg" alt="Handmade Bracelets">
+            </div>
         </div>
     </div>
 </body>
