@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaitlyn Vasquez | Portfolio</title>
-    <style>
-        body { background-color: #f4f1ee; color: #4a4a4a; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 40px 20px; }
-        .container { max-width: 700px; margin: 0 auto; }
-        header { text-align: center; margin-bottom: 60px; }
-        h1 { font-weight: 300; font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
-        .subtitle { font-size: 0.9rem; letter-spacing: 1px; color: #8c8c8c; }
-        .section { background: #ffffff; padding: 30px; border-radius: 20px; margin-bottom: 30px; line-height: 1.6; border: 1px solid #e8e4e1; }
-        h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #f4f1ee; padding-bottom: 10px; margin-bottom: 20px; }
-        .business-tag { display: inline-block; background: #eceae7; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; margin: 5px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; border: 1px solid #e8e4e1; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaitlyn Vasquez | Portfolio</title>
+    <style>
+        body { background-color: #f4f1ee; color: #4a4a4a; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 40px 20px; }
+        .container { max-width: 700px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { font-weight: 300; font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+        .subtitle { font-size: 0.9rem; letter-spacing: 1px; color: #8c8c8c; }
+        .section { background: #ffffff; padding: 30px; border-radius: 20px; margin-bottom: 30px; line-height: 1.6; border: 1px solid #e8e4e1; }
+        h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #f4f1ee; padding-bottom: 10px; margin-bottom: 20px; }
+        .business-tag { display: inline-block; background: #eceae7; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; margin: 5px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; border: 1px solid #e8e4e1; }
+        /* Style for the mom/son photos to make them look soft and personal */
+        .family-photo { filter: sepia(10%); transition: 0.3s; }
+        .family-photo:hover { filter: sepia(0%); }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>KAITLYN VASQUEZ</h1>
-            <p class="subtitle">SOFTWARE ENGINEER IN TRAINING • CREATIVE • MOTHER</p>
-        </header>
+    <div class="container">
+        <header>
+            <h1>KAITLYN VASQUEZ</h1>
+            <p class="subtitle">SOFTWARE ENGINEER IN TRAINING • CREATIVE • MOTHER</p>
+        </header>
 
-        <div class="section">
-            <h2>The Mission</h2>
-            <p>I graduated high school in 2024 a full year ahead of my class. At 19, I am a mother to a 1-year-old and live independently, driven by a dream to transfer to <b>UCLA or USC</b> for Computer Science. I am Determined, Responsible, and Resilient.</p>
-        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I graduated high school in 2024—a full year ahead of my class. At 19, I am a mother to my 1-year-old son and live independently, fueled by the goal of transferring to <b>UCLA or USC</b> for Computer Science. Every line of code I write is driven by my desire to build a future for my family. I am Determined, Responsible, and Resilient.</p>
+            <div class="grid">
+                <img src="family1.jpg" class="family-photo" alt="Me and my son">
+                <img src="family2.jpg" class="family-photo" alt="Our journey">
+            </div>
+        </div>
 
-        <div class="section">
-            <h2>The Studio & Sweets</h2>
-            <p>I run a creative business specializing in mini cakes and handmade crafts. This business taught me management, attention to detail, and the beauty of building things from scratch.</p>
-            <span class="business-tag">Mini Cakes</span>
-            <span class="business-tag">Handmade Crafts</span>
-            
-            <div class="grid">
-                <img src="Treats.jpg" alt="Mini Cakes">
-                <img src="crafts.jpg" alt="Handmade Bracelets">
-            </div>
-        </div>
-    </div>
-</body>
+        <div class="section">
+            <h2>Academic Roadmap</h2>
+            <p>Currently maintaining a 4.0 GPA at Victor Valley College while completing core prerequisites:</p>
+            <span class="business-tag">Calculus I & II</span>
+            <span class="business-tag">Physics for Engineers</span>
+            <span class="business-tag">C++ Programming (CIS 201)</span>
+        </div>
+
+        <div class="section">
+            <h2>The Studio & Sweets</h2>
+            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship taught me management, attention to detail, and the beauty of building things from scratch.</p>
+            <span class="business-tag">Mini Cakes</span>
+            <span class="business-tag">Handmade Crafts</span>
+            <div class="grid">
+                <img src="Treats.jpg" alt="Mini Cakes">
+                <img src="crafts.jpg" alt="Handmade Bracelets">
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-bottom: 50px;">
+            <p class="subtitle">GET IN TOUCH</p>
+            <a href="mailto:Kaitlynvasquez22@icloud.com" style="color: #4a4a4a; text-decoration: none; border-bottom: 1px solid #4a4a4a;">Email</a>
+            <span style="margin: 0 10px;">•</span>
+            <a href="https://profile.indeed.com/p/kaitlynv-yjwbvd8" style="color: #4a4a4a; text-decoration: none; border-bottom: 1px solid #4a4a4a;">Indeed</a>
+        </div>
+    </div> </body>
 </html>
