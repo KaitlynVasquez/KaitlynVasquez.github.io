@@ -8,12 +8,13 @@
     
     <style>
         body { 
-            background-color: #f8f7f5; /* Slightly cleaner off-white */
+            background-color: #f8f7f5; 
             color: #333333; 
             font-family: 'Inter', sans-serif; 
             margin: 0; 
             padding: 60px 20px; 
             -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
         }
         .container { max-width: 800px; margin: 0 auto; }
         
@@ -40,9 +41,16 @@
             margin-bottom: 40px; 
             line-height: 1.8; 
             border: 1px solid rgba(0,0,0,0.03);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02); /* Soft shadow */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02); 
+            /* Added fade-in animation */
+            animation: fadeIn 1s ease-out;
         }
         
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         h2 { 
             font-size: 0.9rem; 
             text-transform: uppercase; 
@@ -65,6 +73,18 @@
             margin: 5px; 
             color: #666;
             letter-spacing: 0.5px;
+        }
+
+        /* Technical Project Styling */
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            border-left: 2px solid #f0efed;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            border-left: 2px solid #000;
+            background: #fafafa;
         }
 
         .grid { 
@@ -122,19 +142,40 @@
         </div>
 
         <div class="section">
-            <h2>Academic Roadmap</h2>
+            <h2>Academic Roadmap & Skills</h2>
             <p>Currently maintaining a <b>4.0 GPA</b> at Victor Valley College while completing core prerequisites:</p>
             <span class="business-tag">Calculus I & II</span>
             <span class="business-tag">Physics for Engineers</span>
             <span class="business-tag">C++ Programming (CIS 201)</span>
+            <span class="business-tag">Discrete Mathematics</span>
+            
+            <p style="margin-top: 25px;"><b>Technical Proficiencies:</b></p>
+            <span class="business-tag">C++</span>
+            <span class="business-tag">HTML5 / CSS3</span>
+            <span class="business-tag">Git/GitHub</span>
+            <span class="business-tag">Technical Documentation</span>
+        </div>
+
+        <div class="section">
+            <h2>Technical Projects</h2>
+            <div class="project-card">
+                <b>Portfolio Development</b>
+                <p style="font-size: 0.85rem; color: #666;">Developing a responsive personal brand site using semantic HTML and custom CSS to document my transfer journey and business growth.</p>
+            </div>
+            <div class="project-card">
+                <b>C++ Inventory System</b>
+                <p style="font-size: 0.85rem; color: #666;">(Class Project) Created a terminal-based application to manage product data, demonstrating knowledge of loops, arrays, and file I/O.</p>
+            </div>
+            <p style="font-size: 0.75rem; margin-top: 20px; color: #999;"><i>More projects currently in development...</i></p>
         </div>
 
         <div class="section">
             <h2>The Studio & Sweets</h2>
-            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship taught me management, attention to detail, and the beauty of building things from scratch.</p>
+            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship taught me management, attention to detail, and the beauty of building things from scratch—skills that directly translate to software engineering.</p>
             <div style="margin-bottom: 15px;">
-                <span class="business-tag">Mini Cakes</span>
-                <span class="business-tag">Handmade Crafts</span>
+                <span class="business-tag">Business Management</span>
+                <span class="business-tag">Client Relations</span>
+                <span class="business-tag">Creative Direction</span>
             </div>
             <div class="grid">
                 <img src="Treats.jpg" alt="Mini Cakes">
@@ -147,6 +188,8 @@
             <a href="mailto:Kaitlynvasquez22@icloud.com" class="contact-link">Email</a>
             <span style="margin: 0 15px; color: #ccc;">•</span>
             <a href="https://profile.indeed.com/p/kaitlynv-yjwbvd8" class="contact-link">Indeed</a>
+            <span style="margin: 0 15px; color: #ccc;">•</span>
+            <a href="https://github.com/kaitlynvasquez" class="contact-link">GitHub</a>
         </footer>
     </div>
 </body>
