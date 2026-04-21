@@ -1,65 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaitlyn Vasquez | Portfolio</title>
-    <style>
-        body { background-color: #f4f1ee; color: #4a4a4a; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 40px 20px; }
-        .container { max-width: 700px; margin: 0 auto; }
-        header { text-align: center; margin-bottom: 60px; }
-        h1 { font-weight: 300; font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
-        .subtitle { font-size: 0.9rem; letter-spacing: 1px; color: #8c8c8c; }
-        .section { background: #ffffff; padding: 30px; border-radius: 20px; margin-bottom: 30px; line-height: 1.6; border: 1px solid #e8e4e1; }
-        h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #f4f1ee; padding-bottom: 10px; margin-bottom: 20px; }
-        .business-tag { display: inline-block; background: #eceae7; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; margin: 5px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; border: 1px solid #e8e4e1; }
-        /* Style for the mom/son photos to make them look soft and personal */
-        .family-photo { filter: sepia(10%); transition: 0.3s; }
-        .family-photo:hover { filter: sepia(0%); }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaitlyn Vasquez | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            background-color: #f8f7f5; /* Slightly cleaner off-white */
+            color: #333333; 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 60px 20px; 
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        header { text-align: center; margin-bottom: 80px; }
+        h1 { 
+            font-weight: 200; 
+            font-size: 2.8rem; 
+            letter-spacing: 6px; 
+            text-transform: uppercase; 
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        .subtitle { 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            color: #999; 
+            font-weight: 400;
+        }
+
+        .section { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 24px; 
+            margin-bottom: 40px; 
+            line-height: 1.8; 
+            border: 1px solid rgba(0,0,0,0.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02); /* Soft shadow */
+        }
+        
+        h2 { 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            color: #888;
+            border-bottom: 1px solid #f0efed; 
+            padding-bottom: 15px; 
+            margin-bottom: 25px; 
+            font-weight: 400;
+        }
+
+        b { color: #000; font-weight: 500; }
+
+        .business-tag { 
+            display: inline-block; 
+            background: #f0efed; 
+            padding: 6px 18px; 
+            border-radius: 100px; 
+            font-size: 0.75rem; 
+            margin: 5px; 
+            color: #666;
+            letter-spacing: 0.5px;
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            margin-top: 30px; 
+        }
+        .grid img { 
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 18px; 
+            transition: transform 0.5s ease;
+        }
+        .grid img:hover {
+            transform: scale(1.02);
+        }
+
+        .family-photo { filter: sepia(15%) contrast(95%); }
+        .family-photo:hover { filter: sepia(0%) contrast(100%); }
+
+        footer {
+            text-align: center; 
+            margin-top: 80px; 
+            padding-bottom: 60px;
+        }
+        .contact-link {
+            color: #1a1a1a; 
+            text-decoration: none; 
+            font-size: 0.9rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            transition: border-color 0.3s;
+        }
+        .contact-link:hover {
+            border-color: #000;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>KAITLYN VASQUEZ</h1>
-            <p class="subtitle">SOFTWARE ENGINEER IN TRAINING • CREATIVE • MOTHER</p>
-        </header>
+    <div class="container">
+        <header>
+            <h1>KAITLYN VASQUEZ</h1>
+            <p class="subtitle">SOFTWARE ENGINEER IN TRAINING • CREATIVE • MOTHER</p>
+        </header>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I graduated high school in 2024—a full year ahead of my class. At 19, I am a mother to my 1-year-old son and live independently, fueled by the goal of transferring to <b>UCLA or USC</b> for Computer Science. Every line of code I write is driven by my desire to build a future for my family. I am Determined, Responsible, and Resilient.</p>
-            <div class="grid">
-                <img src="family1.jpg" class="family-photo" alt="Me and my son">
-                <img src="family2.jpg" class="family-photo" alt="Our journey">
-            </div>
-        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I graduated high school in 2024—a full year ahead of my class. At 19, I am a mother to my 1-year-old son and live independently, fueled by the goal of transferring to <b>UCLA or USC</b> for Computer Science. Every line of code I write is driven by my desire to build a future for my family. I am Determined, Responsible, and Resilient.</p>
+            <div class="grid">
+                <img src="IMG_6474.jpg" class="family-photo" alt="Me and my son">
+                <img src="IMG_9034.jpg" class="family-photo" alt="Our journey">
+            </div>
+        </div>
 
-        <div class="section">
-            <h2>Academic Roadmap</h2>
-            <p>Currently maintaining a 4.0 GPA at Victor Valley College while completing core prerequisites:</p>
-            <span class="business-tag">Calculus I & II</span>
-            <span class="business-tag">Physics for Engineers</span>
-            <span class="business-tag">C++ Programming (CIS 201)</span>
-        </div>
+        <div class="section">
+            <h2>Academic Roadmap</h2>
+            <p>Currently maintaining a <b>4.0 GPA</b> at Victor Valley College while completing core prerequisites:</p>
+            <span class="business-tag">Calculus I & II</span>
+            <span class="business-tag">Physics for Engineers</span>
+            <span class="business-tag">C++ Programming (CIS 201)</span>
+        </div>
 
-        <div class="section">
-            <h2>The Studio & Sweets</h2>
-            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship taught me management, attention to detail, and the beauty of building things from scratch.</p>
-            <span class="business-tag">Mini Cakes</span>
-            <span class="business-tag">Handmade Crafts</span>
-            <div class="grid">
-                <img src="Treats.jpg" alt="Mini Cakes">
-                <img src="crafts.jpg" alt="Handmade Bracelets">
-            </div>
-        </div>
+        <div class="section">
+            <h2>The Studio & Sweets</h2>
+            <p>I run a creative business specializing in mini cakes and handmade crafts. This entrepreneurship taught me management, attention to detail, and the beauty of building things from scratch.</p>
+            <div style="margin-bottom: 15px;">
+                <span class="business-tag">Mini Cakes</span>
+                <span class="business-tag">Handmade Crafts</span>
+            </div>
+            <div class="grid">
+                <img src="Treats.jpg" alt="Mini Cakes">
+                <img src="crafts.jpg" alt="Handmade Bracelets">
+            </div>
+        </div>
 
-        <div style="text-align: center; margin-top: 50px; padding-bottom: 50px;">
-            <p class="subtitle">GET IN TOUCH</p>
-            <a href="mailto:Kaitlynvasquez22@icloud.com" style="color: #4a4a4a; text-decoration: none; border-bottom: 1px solid #4a4a4a;">Email</a>
-            <span style="margin: 0 10px;">•</span>
-            <a href="https://profile.indeed.com/p/kaitlynv-yjwbvd8" style="color: #4a4a4a; text-decoration: none; border-bottom: 1px solid #4a4a4a;">Indeed</a>
-        </div>
-    </div> </body>
+        <footer>
+            <p class="subtitle" style="margin-bottom: 20px;">GET IN TOUCH</p>
+            <a href="mailto:Kaitlynvasquez22@icloud.com" class="contact-link">Email</a>
+            <span style="margin: 0 15px; color: #ccc;">•</span>
+            <a href="https://profile.indeed.com/p/kaitlynv-yjwbvd8" class="contact-link">Indeed</a>
+        </footer>
+    </div>
+</body>
 </html>
